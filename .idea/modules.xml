@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-common/weshopping-common.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-common/weshopping-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-eureka/weshopping-eureka.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-eureka/weshopping-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-parent.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-parent.iml" />
