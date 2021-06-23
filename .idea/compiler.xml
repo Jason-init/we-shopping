@@ -9,6 +9,7 @@
         <module name="weshopping-service-api" />
         <module name="weshopping-common" />
         <module name="weshopping-gateway" />
+        <module name="weshopping-common-db" />
         <module name="weshopping-eureka" />
         <module name="weshopping-web" />
         <module name="weshopping-service" />
@@ -16,6 +17,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="weshopping-common" target="1.8" />
+      <module name="weshopping-common-db" target="1.8" />
       <module name="weshopping-eureka" target="1.8" />
       <module name="weshopping-gateway" target="8" />
       <module name="weshopping-parent" target="1.8" />
@@ -27,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="weshopping-common" options="-parameters" />
+      <module name="weshopping-common-db" options="-parameters" />
       <module name="weshopping-eureka" options="-parameters" />
       <module name="weshopping-gateway" options="-parameters" />
       <module name="weshopping-service" options="-parameters" />
