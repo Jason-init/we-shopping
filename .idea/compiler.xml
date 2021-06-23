@@ -6,13 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="weshopping-service-api" />
+        <module name="weshopping-service-goods" />
         <module name="weshopping-common" />
+        <module name="weshopping-service-goods-api" />
         <module name="weshopping-gateway" />
         <module name="weshopping-common-db" />
         <module name="weshopping-eureka" />
         <module name="weshopping-web" />
-        <module name="weshopping-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,7 +22,9 @@
       <module name="weshopping-gateway" target="8" />
       <module name="weshopping-parent" target="1.8" />
       <module name="weshopping-service" target="8" />
-      <module name="weshopping-service-api" target="8" />
+      <module name="weshopping-service-api" target="1.8" />
+      <module name="weshopping-service-goods" target="8" />
+      <module name="weshopping-service-goods-api" target="1.8" />
       <module name="weshopping-web" target="8" />
     </bytecodeTargetLevel>
   </component>
@@ -34,6 +36,8 @@
       <module name="weshopping-gateway" options="-parameters" />
       <module name="weshopping-service" options="-parameters" />
       <module name="weshopping-service-api" options="-parameters" />
+      <module name="weshopping-service-goods" options="-parameters" />
+      <module name="weshopping-service-goods-api" options="-parameters" />
       <module name="weshopping-web" options="-parameters" />
     </option>
   </component>

@@ -10,10 +10,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>weshopping-service-api</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>weshopping-service-goods-api</module>
+    </modules>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-openfeign</artifactId>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>persistence-api</artifactId>
+        <version>1.0</version>
+        <scope>compile</scope>
+    </dependency>
+</dependencies>
 
 </project>
