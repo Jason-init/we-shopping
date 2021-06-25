@@ -21,9 +21,9 @@
       <module name="weshopping-eureka" target="1.8" />
       <module name="weshopping-gateway" target="8" />
       <module name="weshopping-parent" target="1.8" />
-      <module name="weshopping-service" target="8" />
+      <module name="weshopping-service" target="1.8" />
       <module name="weshopping-service-api" target="1.8" />
-      <module name="weshopping-service-goods" target="8" />
+      <module name="weshopping-service-goods" target="1.8" />
       <module name="weshopping-service-goods-api" target="1.8" />
       <module name="weshopping-web" target="8" />
     </bytecodeTargetLevel>

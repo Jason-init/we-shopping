@@ -1,4 +1,4 @@
-package com.qizhang.service.goods;
+package com.qizhang.service_goods;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,9 +7,9 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan(basePackages = "com.qizhang.service.goods.dao")
-public class GoodsApplication {
+@MapperScan(basePackages = "com.qizhang.service_goods.dao")
+public class ServiceGoodsApplication {
     public static void main(String[] args) {
-        SpringApplication.run(GoodsApplication.class, args);
+        SpringApplication.run(ServiceGoodsApplication.class, args);
     }
 }

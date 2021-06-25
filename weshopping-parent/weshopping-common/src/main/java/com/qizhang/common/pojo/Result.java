@@ -15,7 +15,7 @@ public class Result<T> {
         this.flag = flag;
         this.code = code;
         this.message = message;
-        this.data = (T)data;
+        this.data = (T) data;
     }
 
     public Result(boolean flag, Integer code, String message) {
