@@ -13,6 +13,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>weshopping-service-goods-api</module>
+        <module>weshopping-service-business-api</module>
+        <module>weshopping-service-config-api</module>
+        <module>weshopping-service-order-api</module>
+        <module>weshopping-service-system-api</module>
+        <module>weshopping-service-user-api</module>
     </modules>
 
     <dependencies>

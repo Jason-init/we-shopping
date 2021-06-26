@@ -14,6 +14,7 @@ import java.util.Map;
 
 @RequestMapping("/brand")
 @RestController
+@CrossOrigin
 public class BrandController {
 
     private BrandService brandService;

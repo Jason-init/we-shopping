@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-common-db/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-business-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-config-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-user-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java" charset="UTF-8" />
   </component>
 </project>

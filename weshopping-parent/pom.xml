@@ -16,6 +16,8 @@
         <module>weshopping-eureka</module>
         <module>weshopping-common</module>
         <module>weshopping-common-db</module>
+        <module>weshopping-canal</module>
+        <module>weshopping-service-business-api</module>
     </modules>
 
     <parent>
