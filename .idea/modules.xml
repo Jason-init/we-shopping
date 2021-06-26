@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/weshopping-service-order-api.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/weshopping-service-order-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/weshopping-service-system.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/weshopping-service-system.iml" />
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/weshopping-service-system-api.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/weshopping-service-system-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-user/weshopping-service-user.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-user/weshopping-service-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-user-api/weshopping-service-user-api.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-user-api/weshopping-service-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/weshopping-parent/weshopping-web/weshopping-web.iml" filepath="$PROJECT_DIR$/weshopping-parent/weshopping-web/weshopping-web.iml" />
     </modules>

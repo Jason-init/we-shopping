@@ -21,6 +21,7 @@
         <module name="weshopping-common-db" />
         <module name="weshopping-service-order-api" />
         <module name="weshopping-service-config" />
+        <module name="weshopping-service-user" />
         <module name="weshopping-service-system-api" />
         <module name="weshopping-service-order" />
       </profile>
@@ -44,6 +45,7 @@
       <module name="weshopping-service-order-api" target="1.8" />
       <module name="weshopping-service-system" target="1.8" />
       <module name="weshopping-service-system-api" target="1.8" />
+      <module name="weshopping-service-user" target="1.8" />
       <module name="weshopping-service-user-api" target="1.8" />
       <module name="weshopping-web" target="8" />
     </bytecodeTargetLevel>
@@ -67,6 +69,7 @@
       <module name="weshopping-service-order-api" options="-parameters" />
       <module name="weshopping-service-system" options="-parameters" />
       <module name="weshopping-service-system-api" options="-parameters" />
+      <module name="weshopping-service-user" options="-parameters" />
       <module name="weshopping-service-user-api" options="-parameters" />
       <module name="weshopping-web" options="-parameters" />
     </option>
