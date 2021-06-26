@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>weshopping-service-goods</module>
+        <module>weshopping-service-business</module>
     </modules>
 
 
