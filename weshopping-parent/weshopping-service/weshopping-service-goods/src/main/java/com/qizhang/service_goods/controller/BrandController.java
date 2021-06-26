@@ -1,5 +1,7 @@
 package com.qizhang.service_goods.controller;
 
+import com.github.pagehelper.Page;
+import com.qizhang.common.pojo.PageResult;
 import com.qizhang.common.pojo.Result;
 import com.qizhang.common.pojo.StatusCode;
 import com.qizhang.service_goods.service.BrandService;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RequestMapping("/brand")
 @RestController
@@ -41,5 +44,30 @@ public class BrandController {
         brand.setId(id);
         brandService.update(brand);
         return new Result<>(true, StatusCode.OK, "修改成功");
+    }
+
+    @DeleteMapping("/{id}")
+    public Result<Void> deleteById(@PathVariable("id") Integer id) {
+        brandService.deleteById(id);
+        return new Result<>(true, StatusCode.OK, "删除成功");
+    }
+
+    @GetMapping("/search")
+    public Result<List<Brand>> search(@RequestParam Map<String, Object> searchMap) {
+        return new Result<>(true, StatusCode.OK, "查询成功", brandService.list(searchMap));
+    }
+
+    @GetMapping("/search/{page}/{size}")
+    public Result<PageResult<Brand>> findPage(@PathVariable("page") int page, @PathVariable("size") int size) {
+        Page<Brand> brandPage = brandService.findPage(page, size);
+        PageResult<Brand> pageResult = new PageResult<>(brandPage.getTotal(), brandPage.getResult());
+        return new Result<>(true, StatusCode.OK, "查询成功", pageResult);
+    }
+
+    @GetMapping("/searchPage/{page}/{size}")
+    public Result<PageResult<Brand>> findPage(@PathVariable("page") int page, @PathVariable("size") int size, @RequestParam Map<String, Object> searchMap) {
+        Page<Brand> brandPage = brandService.findPage(searchMap, page, size);
+        PageResult<Brand> pageResult = new PageResult<>(brandPage.getTotal(), brandPage.getResult());
+        return new Result<>(true, StatusCode.OK, "查询成功", pageResult);
     }
 }
