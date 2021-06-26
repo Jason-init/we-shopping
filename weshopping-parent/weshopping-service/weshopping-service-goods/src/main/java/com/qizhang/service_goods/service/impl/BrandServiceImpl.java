@@ -85,21 +85,7 @@ public class BrandServiceImpl implements BrandService {
      */
     @Override
     public List<Brand> list(Map<String, Object> searchMap) {
-
-        Example example = new Example(Brand.class);
-        Example.Criteria criteria = example.createCriteria();
-
-        if (searchMap != null) {
-            //品牌名称模糊查询
-            if (searchMap.get("name") != null && !"".equals(searchMap.get("name"))) {
-                criteria.andLike("name", "%" + searchMap.get("name") + "%");
-            }
-            //品牌首字母精确查询
-            if (searchMap.get("letter") != null && !"".equals(searchMap.get("letter"))) {
-                criteria.andEqualTo("letter", searchMap.get("letter"));
-            }
-        }
-
+        Example example = createExample(searchMap);
         return brandMapper.selectByExample(example);
     }
 
@@ -127,20 +113,50 @@ public class BrandServiceImpl implements BrandService {
     @Override
     public Page<Brand> findPage(Map<String, Object> searchMap, int page, int size) {
         PageHelper.startPage(page, size);
+        Example example = createExample(searchMap);
+        return (Page<Brand>) brandMapper.selectByExample(example);
 
+    }
+
+    /**
+     * 根据分类名称查询品牌列表
+     *
+     * @param categoryName
+     * @return
+     */
+    @Override
+    public List<Map> findBrandListByCategoryName(String categoryName) {
+        List<Map> brandList = brandMapper.findBrandListByCategoryName(categoryName);
+        return brandList;
+    }
+
+    private Example createExample(Map<String, Object> searchMap) {
         Example example = new Example(Brand.class);
         Example.Criteria criteria = example.createCriteria();
-
         if (searchMap != null) {
+            // 品牌名称
             if (searchMap.get("name") != null && !"".equals(searchMap.get("name"))) {
                 criteria.andLike("name", "%" + searchMap.get("name") + "%");
             }
-            if (searchMap.get("letter") != null && !"".equals(searchMap.get("letter"))) {
-                criteria.andEqualTo("letter", searchMap.get("letter"));
+            // 品牌图片地址
+            if (searchMap.get("image") != null && !"".equals(searchMap.get("image"))) {
+                criteria.andLike("image", "%" + searchMap.get("image") + "%");
             }
+            // 品牌的首字母
+            if (searchMap.get("letter") != null && !"".equals(searchMap.get("letter"))) {
+                criteria.andLike("letter", "%" + searchMap.get("letter") + "%");
+            }
+
+            // 品牌id
+            if (searchMap.get("id") != null) {
+                criteria.andEqualTo("id", searchMap.get("id"));
+            }
+            // 排序
+            if (searchMap.get("seq") != null) {
+                criteria.andEqualTo("seq", searchMap.get("seq"));
+            }
+
         }
-
-        return (Page<Brand>) brandMapper.selectByExample(example);
-
+        return example;
     }
 }

@@ -4,71 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added exception handler advice for goods service">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_client_1_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_common_1_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_otter_canal_protocol_1_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_xpand_starter_canal_0_0_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_34_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java/com/qizhang/canal/CanalApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java/com/qizhang/canal/listener/BusinessListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java/com/qizhang/canal/listener/SpuListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/weshopping-canal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-business-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-business-api/src/main/java/com/qizhang/service_business_api/pojo/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-business-api/src/main/java/com/qizhang/service_business_api/pojo/Ad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-business-api/weshopping-service-business-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-config-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-config-api/src/main/java/com/qizhang/service_config_api/pojo/FreightTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-config-api/weshopping-service-config-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Album.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Para.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Pref.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Sku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Spec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Spu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/OrderConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/OrderLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/Preferential.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/ReturnCause.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/ReturnOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo/ReturnOrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/weshopping-service-order-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/weshopping-service-system-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-user-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-user-api/weshopping-service-user-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added pojo for service api">
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/AlbumController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/LogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/ParaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/PrefController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SkuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpecController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/TemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/AlbumMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/LogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/ParaMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/PrefMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/SkuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/SpecMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/SpuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/TemplateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/AlbumService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/LogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/ParaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/PrefService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SkuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpecService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/TemplateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/AlbumServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/LogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/ParaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/PrefServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SkuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpecServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/TemplateServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/target/classes/com/qizhang/service_goods_api/pojo/Brand.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/target/classes/com/qizhang/service_goods_api/pojo/Brand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/BrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/BrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/BrandMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/BrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/BrandServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/controller/BrandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/controller/BrandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/dao/BrandMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/dao/BrandMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/BrandService.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/BrandService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/impl/BrandServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/impl/BrandServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-order-api/src/main/java/com/qizhang/service_order_api/pojo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.3109426" />
@@ -129,11 +111,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service-api\weshopping-service-order-api\src\main\java\com\qizhang\service_order_api\pojo" />
-      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service-api\weshopping-service-config-api\src\main\java\com\qizhang\service_config_api\pojo" />
-      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service-api\weshopping-service-business-api\src\main\java\com\qizhang\service_business_api\pojo" />
-      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service-api\weshopping-service-goods-api\src\main\java\com\qizhang\service_goods_api\pojo" />
-      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-common\src\main\java\com\qizhang\common\pojo" />
+      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-goods\src\main\java\com\qizhang\service_goods\controller" />
+      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-goods\src\main\java\com\qizhang\service_goods\service\impl" />
+      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-goods\src\main\java\com\qizhang\service_goods\service" />
+      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-goods\src\main\java\com\qizhang\service_goods\dao" />
+      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service-api\weshopping-service-user-api\src\main\java\com\qizhang\service_user_api\pojo" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceGoodsApplication">
@@ -201,7 +183,7 @@
       <workItem from="1624673845940" duration="11934000" />
       <workItem from="1624702513351" duration="973000" />
       <workItem from="1624704460480" duration="1328000" />
-      <workItem from="1624706044371" duration="4096000" />
+      <workItem from="1624706044371" duration="6891000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -294,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624687304228</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added pojo for service api">
+      <created>1624710640054</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1624710640055</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +314,7 @@
     <MESSAGE value="Updated goods service" />
     <MESSAGE value="Finished goods service" />
     <MESSAGE value="Added exception handler advice for goods service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added exception handler advice for goods service" />
+    <MESSAGE value="Added pojo for service api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pojo for service api" />
   </component>
 </project>

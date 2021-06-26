@@ -71,4 +71,10 @@ public class BrandController {
         PageResult<Brand> pageResult = new PageResult<>(brandPage.getTotal(), brandPage.getResult());
         return new Result<>(true, StatusCode.OK, "查询成功", pageResult);
     }
+
+    @GetMapping("/category/{categoryName}")
+    public Result<List<Map>> findBrandListByCategoryName(@PathVariable("categoryName")String categoryName){
+        List<Map> brandList = brandService.findBrandListByCategoryName(categoryName);
+        return new Result<>(true,StatusCode.OK,"查询成功",brandList);
+    }
 }
