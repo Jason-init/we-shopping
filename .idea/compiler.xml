@@ -19,6 +19,7 @@
         <module name="weshopping-service-goods-api" />
         <module name="weshopping-common-db" />
         <module name="weshopping-service-order-api" />
+        <module name="weshopping-service-config" />
         <module name="weshopping-service-system-api" />
       </profile>
     </annotationProcessing>
@@ -33,6 +34,7 @@
       <module name="weshopping-service-api" target="1.8" />
       <module name="weshopping-service-business" target="1.8" />
       <module name="weshopping-service-business-api" target="1.8" />
+      <module name="weshopping-service-config" target="1.8" />
       <module name="weshopping-service-config-api" target="1.8" />
       <module name="weshopping-service-goods" target="1.8" />
       <module name="weshopping-service-goods-api" target="1.8" />
@@ -53,6 +55,7 @@
       <module name="weshopping-service-api" options="-parameters" />
       <module name="weshopping-service-business" options="-parameters" />
       <module name="weshopping-service-business-api" options="-parameters" />
+      <module name="weshopping-service-config" options="-parameters" />
       <module name="weshopping-service-config-api" options="-parameters" />
       <module name="weshopping-service-goods" options="-parameters" />
       <module name="weshopping-service-goods-api" options="-parameters" />

@@ -12,6 +12,7 @@
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-user-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java" charset="UTF-8" />
   </component>
 </project>
