@@ -15,6 +15,7 @@
         <module>weshopping-service-goods</module>
         <module>weshopping-service-business</module>
         <module>weshopping-service-config</module>
+        <module>weshopping-service-order</module>
     </modules>
 
 
