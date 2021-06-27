@@ -10,6 +10,6 @@ import java.util.Map;
 
 public interface BrandMapper extends Mapper<Brand> {
 
-     @Select("SELECT name,image FROM tb_brand where id in( SELECT brand_id FROM tb_category_brand WHERE category_id in ( SELECT id from tb_category where name=#{categoryName}))")
+     @Select("SELECT b.`name`,b.image FROM tb_brand b,tb_category c,tb_category_brand cb WHERE b.id=cb.brand_id AND c.id=cb.category_id AND c.`name`= #{categoryName}")
     public List<Map> findBrandListByCategoryName(@Param("categoryName")String categoryName);
 }
