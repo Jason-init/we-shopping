@@ -107,12 +107,12 @@ public class SpecServiceImpl implements SpecService {
 
     @Override
     public List<Map> findSpecListByCategoryName(String categoryName) {
-        List<Map> specList = specMapper.findSpecListByCategoryName(categoryName);
-        for (Map map : specList) {
+        List<Map> list = specMapper.findSpecListByCategoryName(categoryName);
+        for (Map map : list) {
             String[] options = ((String) map.get("options")).split(",");
-            map.put("options",options);
+            map.put("options", options);
         }
-        return specList;
+        return list;
     }
 
     /**

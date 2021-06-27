@@ -11,6 +11,6 @@ import java.util.Map;
 
 public interface SpecMapper extends Mapper<Spec> {
 
-    @Select("SELECT name,options FROM tb_spec WHERE template_id in(SELECT template_id FROM tb_category WHERE name=#{categoryName})")
+    @Select("SELECT s.`name`, s.`options` FROM tb_spec s, tb_category c WHERE s.template_id = c.template_id AND c.`name` = #{categoryName}")
     public List<Map> findSpecListByCategoryName(@Param("categoryName") String categoryName);
 }
