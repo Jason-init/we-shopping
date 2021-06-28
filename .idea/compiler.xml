@@ -8,11 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="weshopping-service-business-api" />
         <module name="weshopping-service-business" />
-        <module name="weshopping-gateway" />
         <module name="weshopping-eureka" />
         <module name="weshopping-service-config-api" />
         <module name="weshopping-web" />
         <module name="weshopping-service-file" />
+        <module name="weshopping-gateway-system" />
         <module name="weshopping-canal" />
         <module name="weshopping-service-goods" />
         <module name="weshopping-service-user-api" />
@@ -33,6 +33,7 @@
       <module name="weshopping-common-db" target="1.8" />
       <module name="weshopping-eureka" target="1.8" />
       <module name="weshopping-gateway" target="8" />
+      <module name="weshopping-gateway-system" target="8" />
       <module name="weshopping-parent" target="1.8" />
       <module name="weshopping-service" target="1.8" />
       <module name="weshopping-service-api" target="1.8" />
@@ -59,6 +60,7 @@
       <module name="weshopping-common-db" options="-parameters" />
       <module name="weshopping-eureka" options="-parameters" />
       <module name="weshopping-gateway" options="-parameters" />
+      <module name="weshopping-gateway-system" options="-parameters" />
       <module name="weshopping-service" options="-parameters" />
       <module name="weshopping-service-api" options="-parameters" />
       <module name="weshopping-service-business" options="-parameters" />
