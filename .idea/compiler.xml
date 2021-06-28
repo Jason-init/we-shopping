@@ -12,6 +12,7 @@
         <module name="weshopping-eureka" />
         <module name="weshopping-service-config-api" />
         <module name="weshopping-web" />
+        <module name="weshopping-service-file" />
         <module name="weshopping-canal" />
         <module name="weshopping-service-goods" />
         <module name="weshopping-service-user-api" />
@@ -39,6 +40,7 @@
       <module name="weshopping-service-business-api" target="1.8" />
       <module name="weshopping-service-config" target="1.8" />
       <module name="weshopping-service-config-api" target="1.8" />
+      <module name="weshopping-service-file" target="1.8" />
       <module name="weshopping-service-goods" target="1.8" />
       <module name="weshopping-service-goods-api" target="1.8" />
       <module name="weshopping-service-order" target="1.8" />
@@ -63,6 +65,7 @@
       <module name="weshopping-service-business-api" options="-parameters" />
       <module name="weshopping-service-config" options="-parameters" />
       <module name="weshopping-service-config-api" options="-parameters" />
+      <module name="weshopping-service-file" options="-parameters" />
       <module name="weshopping-service-goods" options="-parameters" />
       <module name="weshopping-service-goods-api" options="-parameters" />
       <module name="weshopping-service-order" options="-parameters" />

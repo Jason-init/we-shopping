@@ -18,6 +18,7 @@
         <module>weshopping-service-order</module>
         <module>weshopping-service-system</module>
         <module>weshopping-service-user</module>
+        <module>weshopping-service-file</module>
     </modules>
 
 
