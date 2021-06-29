@@ -4,11 +4,16 @@ import com.qizhang.common.pojo.PageResult;
 import com.qizhang.common.pojo.Result;
 import com.qizhang.common.pojo.StatusCode;
 import com.qizhang.service_system.service.AdminService;
+import com.qizhang.service_system.util.JwtUtil;
 import com.qizhang.service_system_api.pojo.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
+
 @RestController
 @CrossOrigin
 @RequestMapping("/admin")
@@ -107,7 +112,13 @@ public class AdminController {
     public Result login(@RequestBody Admin admin) {
         boolean result = adminService.login(admin);
         if (result) {
-            return new Result(true, StatusCode.OK, "登陆成功");
+            //用户登录验证成功，生成jwt并返回给客户端
+            Map<String, String> info = new HashMap<>();
+            info.put("username", admin.getLoginName());
+            String jwt = JwtUtil.createJWT(UUID.randomUUID().toString(), admin.getLoginName(), null);
+            info.put("token", jwt);
+
+            return new Result(true, StatusCode.OK, "登陆成功", info);
         } else {
             return new Result(false, StatusCode.ERROR, "登陆失败");
         }
