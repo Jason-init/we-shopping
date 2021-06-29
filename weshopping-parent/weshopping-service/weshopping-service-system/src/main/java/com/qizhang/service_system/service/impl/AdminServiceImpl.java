@@ -6,6 +6,7 @@ import com.qizhang.service_system.dao.AdminMapper;
 import com.qizhang.service_system.service.AdminService;
 import com.qizhang.service_system_api.pojo.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
@@ -44,6 +45,13 @@ public class AdminServiceImpl implements AdminService {
      */
     @Override
     public void add(Admin admin){
+        //生成盐
+        String gensalt = BCrypt.gensalt();
+        //使用盐+用户的密码来生成最终的加密密码
+        String hashpw = BCrypt.hashpw(admin.getPassword(), gensalt);
+        //将生成的加密密码来取代用户的密码
+        admin.setPassword(hashpw);
+
         adminMapper.insert(admin);
     }
 
@@ -105,6 +113,25 @@ public class AdminServiceImpl implements AdminService {
     }
 
     /**
+     * 管理员登录
+     *
+     * @param admin admin对象
+     * @return 是否登陆成功
+     */
+    @Override
+    public boolean login(Admin admin) {
+        Admin admin1 = new Admin();
+        admin1.setLoginName(admin.getLoginName());
+        Admin adminResult = adminMapper.selectOne(admin1);
+
+        if (adminResult == null) {
+            return false;
+        } else {
+            return BCrypt.checkpw(admin.getPassword(), adminResult.getPassword());
+        }
+    }
+
+    /**
      * 构建查询对象
      * @param searchMap
      * @return
@@ -134,5 +161,6 @@ public class AdminServiceImpl implements AdminService {
         }
         return example;
     }
+
 
 }

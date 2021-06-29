@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Gateway server done">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_reactive_2_1_3_RELEASE.xml" afterDir="false" />
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added request limits for Gateway service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/src/main/java/com/qizhang/gateway_system/GatewaySystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/src/main/java/com/qizhang/gateway_system/GatewaySystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/weshopping-gateway-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/weshopping-gateway-system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/src/main/java/com/qizhang/service_system_api/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-system-api/src/main/java/com/qizhang/service_system_api/pojo/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/service/impl/AdminServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,18 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewaySystemApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceSystemApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="weshopping-eureka" />
       <extension name="coverage">
@@ -147,11 +157,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="weshopping-service-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qizhang.service_system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qizhang.service_system.ServiceSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceSystemApplication" />
         <item itemvalue="Spring Boot.GatewaySystemApplication" />
-        <item itemvalue="Spring Boot.ServiceGoodsApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Spring Boot.ServiceGoodsApplication" />
         <item itemvalue="Spring Boot.ServiceFileApplication" />
       </list>
     </recent_temporary>
@@ -185,7 +209,8 @@
       <workItem from="1624866710074" duration="5188000" />
       <workItem from="1624876662358" duration="5000" />
       <workItem from="1624876794137" duration="58000" />
-      <workItem from="1624879618451" duration="643000" />
+      <workItem from="1624879618451" duration="946000" />
+      <workItem from="1624948928071" duration="5515000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -362,7 +387,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624873316070</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added request limits for Gateway service">
+      <created>1624880453874</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1624880453874</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added request limits for Gateway service">
+      <created>1624880462082</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1624880462082</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +442,7 @@
     <MESSAGE value="optimized query sql" />
     <MESSAGE value="File upload service done" />
     <MESSAGE value="Gateway server done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gateway server done" />
+    <MESSAGE value="Added request limits for Gateway service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added request limits for Gateway service" />
   </component>
 </project>

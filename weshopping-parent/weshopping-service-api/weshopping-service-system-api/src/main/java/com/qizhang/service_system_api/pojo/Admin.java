@@ -46,6 +46,13 @@ public class Admin implements Serializable {
 		this.status = status;
 	}
 
-
-
+	@Override
+	public String toString() {
+		return "Admin{" +
+				"id=" + id +
+				", loginName='" + loginName + '\'' +
+				", password='" + password + '\'' +
+				", status='" + status + '\'' +
+				'}';
+	}
 }
