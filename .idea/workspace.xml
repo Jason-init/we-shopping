@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added BCrypt for admin login service">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/src/main/java/com/qizhang/gateway_system/filter/AuthorizeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/src/main/java/com/qizhang/gateway_system/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/util/JwtUtil.java" afterDir="false" />
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added jwt authorize filter for system gateway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/target/classes/com/qizhang/gateway_system/GatewaySystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/target/classes/com/qizhang/gateway_system/GatewaySystemApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/weshopping-gateway-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/weshopping-gateway-system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/src/main/java/com/qizhang/service_system/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/target/classes/com/qizhang/service_system/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/target/classes/com/qizhang/service_system/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/weshopping-service-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-system/weshopping-service-system.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,15 +90,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceSystemApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -221,7 +207,8 @@
       <workItem from="1624876794137" duration="58000" />
       <workItem from="1624879618451" duration="946000" />
       <workItem from="1624948928071" duration="7935000" />
-      <workItem from="1624977404618" duration="1713000" />
+      <workItem from="1624977404618" duration="1973000" />
+      <workItem from="1625011105696" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -419,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624966658536</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added jwt authorize filter for system gateway">
+      <created>1624979370877</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1624979370877</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,6 +456,7 @@
     <MESSAGE value="Gateway server done" />
     <MESSAGE value="Added request limits for Gateway service" />
     <MESSAGE value="Added BCrypt for admin login service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added BCrypt for admin login service" />
+    <MESSAGE value="Added jwt authorize filter for system gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jwt authorize filter for system gateway" />
   </component>
 </project>
