@@ -1,22 +1,62 @@
 package com.qizhang.service_goods.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
+import com.qizhang.common.util.IdWorker;
+import com.qizhang.service_goods.dao.BrandMapper;
+import com.qizhang.service_goods.dao.CategoryMapper;
+import com.qizhang.service_goods.dao.SkuMapper;
 import com.qizhang.service_goods.dao.SpuMapper;
 import com.qizhang.service_goods.service.SpuService;
-import com.qizhang.service_goods_api.pojo.Spu;
+import com.qizhang.service_goods_api.pojo.*;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 @Service
 public class SpuServiceImpl implements SpuService {
 
-    @Autowired
     private SpuMapper spuMapper;
+
+    private IdWorker idWorker;
+
+    private CategoryMapper categoryMapper;
+
+    private BrandMapper brandMapper;
+
+    private SkuMapper skuMapper;
+
+    @Autowired
+    public void setSpuMapper(SpuMapper spuMapper) {
+        this.spuMapper = spuMapper;
+    }
+
+    @Autowired
+    public void setIdWorker(IdWorker idWorker) {
+        this.idWorker = idWorker;
+    }
+
+    @Autowired
+    public void setCategoryMapper(CategoryMapper categoryMapper) {
+        this.categoryMapper = categoryMapper;
+    }
+
+    @Autowired
+    public void setBrandMapper(BrandMapper brandMapper) {
+        this.brandMapper = brandMapper;
+    }
+
+    @Autowired
+    public void setSkuMapper(SkuMapper skuMapper) {
+        this.skuMapper = skuMapper;
+    }
 
     /**
      * 查询全部列表
@@ -40,11 +80,73 @@ public class SpuServiceImpl implements SpuService {
 
     /**
      * 增加
-     * @param spu
+     * @param goods
      */
+    @Transactional
     @Override
-    public void add(Spu spu){
-        spuMapper.insert(spu);
+    public void add(Goods goods){
+        //获取spu
+        Spu spu = goods.getSpu();
+        //设置spu的分布式id
+        long id = idWorker.nextId();
+        spu.setId(id + "");
+        //设置spu的删除状态
+        spu.setIsDelete("0");
+        //设置spu上架状态
+        spu.setIsMarketable("0");
+        //设置spu的审核状态
+        spu.setStatus("0");
+        //将处理好的spu存入数据库中
+        spuMapper.insertSelective(spu);
+
+        saveSkuList(goods);
+
+    }
+
+    private void saveSkuList(Goods goods) {
+        Spu spu = goods.getSpu();
+
+        //查询分类对象
+        Category category = categoryMapper.selectByPrimaryKey(spu.getCategory3Id());
+
+        //查询品牌对象
+        Brand brand = brandMapper.selectByPrimaryKey(spu.getBrandId());
+
+        //获取sku集合数据
+        List<Sku> skuList = goods.getSkuList();
+        if (skuList != null) {
+            //遍历集合
+            for (Sku sku : skuList) {
+                //设置sku的id
+                sku.setId(idWorker.nextId() + "");
+                //设置sku如果为空的规格数据
+                if (StringUtils.isEmpty(sku.getSpec())) {
+                    sku.setSpec("{}");
+                }
+                //设置sku的名称(spu的名称 + sku的规格json字符串的对象的值)
+                String name = spu.getName();
+                Map<String, String> specMap = JSON.parseObject(sku.getSpec(), Map.class);
+                if (specMap != null && specMap.size() > 0) {
+                    for (String value : specMap.values()) {
+                        name += (" " + value);
+                    }
+                }
+                sku.setName(name);
+                //设置sku相对应的spu的id
+                sku.setSpuId(spu.getId());
+                //设置创建与修改时间
+                sku.setCreateTime(new Date());
+                sku.setUpdateTime(new Date());
+                //设置商品分类id
+                sku.setCategoryId(category.getId());
+                //设置商品分类名称
+                sku.setCategoryName(category.getName());
+                //设置品牌名称
+                sku.setBrandName(brand.getName());
+
+                skuMapper.insertSelective(sku);
+            }
+        }
     }
 
 

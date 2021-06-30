@@ -5,6 +5,7 @@ import com.qizhang.common.pojo.PageResult;
 import com.qizhang.common.pojo.Result;
 import com.qizhang.common.pojo.StatusCode;
 import com.qizhang.service_goods.service.SpuService;
+import com.qizhang.service_goods_api.pojo.Goods;
 import com.qizhang.service_goods_api.pojo.Spu;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -43,12 +44,12 @@ public class SpuController {
 
     /***
      * 新增数据
-     * @param spu
+     * @param goods
      * @return
      */
     @PostMapping
-    public Result add(@RequestBody Spu spu){
-        spuService.add(spu);
+    public Result add(@RequestBody Goods goods){
+        spuService.add(goods);
         return new Result(true,StatusCode.OK,"添加成功");
     }
 

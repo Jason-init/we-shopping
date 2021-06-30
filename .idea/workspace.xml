@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added jwt authorize filter for system gateway">
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added Snowflake for id generation">
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Goods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/ServiceGoodsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/ServiceGoodsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/controller/SpuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/controller/SpuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/impl/SpuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/impl/SpuServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,19 +66,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/weshopping-parent/weshopping-gateway/weshopping-gateway-system/src/main/java/com/qizhang/gateway_system" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/weshopping-parent/weshopping-common/src/main/java/com/qizhang/common/util" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.3109426" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-common\src\main\java\com\qizhang\common\util" />
       <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-gateway\weshopping-gateway-system\src\main\java\com\qizhang\gateway_system" />
       <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-system\src\main\java\com\qizhang\service_system" />
       <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-file\src\main\java\com\qizhang\service_file" />
       <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-user\src\main\java\com\qizhang\service_user" />
-      <recent name="C:\Users\Qi\Desktop\web\we-shopping\weshopping-parent\weshopping-service\weshopping-service-user\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.qizhang.service_user.handler" />
@@ -89,14 +100,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceSystemApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.ServiceGoodsApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -168,10 +181,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewaySystemApplication" />
-        <item itemvalue="Spring Boot.ServiceSystemApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.ServiceGoodsApplication" />
+        <item itemvalue="Spring Boot.ServiceSystemApplication" />
+        <item itemvalue="Spring Boot.GatewaySystemApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
         <item itemvalue="Spring Boot.ServiceFileApplication" />
       </list>
     </recent_temporary>
@@ -209,6 +222,8 @@
       <workItem from="1624948928071" duration="7935000" />
       <workItem from="1624977404618" duration="1973000" />
       <workItem from="1625011105696" duration="811000" />
+      <workItem from="1625018730640" duration="1887000" />
+      <workItem from="1625050904207" duration="8835000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -413,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624979370877</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added Snowflake for id generation">
+      <created>1625018974307</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1625018974307</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,6 +479,7 @@
     <MESSAGE value="Added request limits for Gateway service" />
     <MESSAGE value="Added BCrypt for admin login service" />
     <MESSAGE value="Added jwt authorize filter for system gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added jwt authorize filter for system gateway" />
+    <MESSAGE value="Added Snowflake for id generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Snowflake for id generation" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package com.qizhang.service_goods.service;
 
 import com.github.pagehelper.Page;
+import com.qizhang.service_goods_api.pojo.Goods;
 import com.qizhang.service_goods_api.pojo.Spu;
 
 import java.util.List;
@@ -23,9 +24,9 @@ public interface SpuService {
 
     /***
      * 新增
-     * @param spu
+     * @param goods
      */
-    void add(Spu spu);
+    void add(Goods goods);
 
     /***
      * 修改
