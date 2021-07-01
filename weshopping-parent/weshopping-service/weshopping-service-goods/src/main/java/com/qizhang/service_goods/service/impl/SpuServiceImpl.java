@@ -254,6 +254,73 @@ public class SpuServiceImpl implements SpuService {
     }
 
     /**
+     * 商品审核
+     *
+     * @param id spu的id
+     */
+    @Transactional
+    @Override
+    public void audit(String id) {
+        Spu spu = spuMapper.selectByPrimaryKey(id);
+
+        if (spu == null) {
+            throw new RuntimeException("当前商品不存在");
+        }
+
+        if ("1".equals(spu.getIsDelete())) {
+            throw new RuntimeException("当前商品处于删除状态");
+        }
+
+        spu.setStatus("1");
+        spu.setIsMarketable("1");
+        spuMapper.updateByPrimaryKeySelective(spu);
+    }
+
+    /**
+     * 商品下架
+     *
+     * @param id spu的id
+     */
+    @Transactional
+    @Override
+    public void pull(String id) {
+        Spu spu = spuMapper.selectByPrimaryKey(id);
+
+        if (spu == null) {
+            throw new RuntimeException("当前商品不存在");
+        }
+
+        if ("1".equals(spu.getIsDelete())) {
+            throw new RuntimeException("当前商品处于删除状态");
+        }
+
+        spu.setIsMarketable("0");
+        spuMapper.updateByPrimaryKeySelective(spu);
+    }
+
+    /**
+     * 商品上架
+     *
+     * @param id spu的id
+     */
+    @Transactional
+    @Override
+    public void put(String id) {
+        Spu spu = spuMapper.selectByPrimaryKey(id);
+
+        if (spu == null) {
+            throw new RuntimeException("当前商品不存在");
+        }
+
+        if (!"1".equals(spu.getStatus())) {
+            throw new RuntimeException("当前商品未审核");
+        }
+
+        spu.setIsMarketable("1");
+        spuMapper.updateByPrimaryKeySelective(spu);
+    }
+
+    /**
      * 构建查询对象
      * @param searchMap
      * @return

@@ -17,6 +17,7 @@ public interface SpuService {
 
     /**
      * 根据ID查询
+     *
      * @param id
      * @return
      */
@@ -66,9 +67,31 @@ public interface SpuService {
 
     /**
      * 通过id查询goods信息
+     *
      * @param id 商品id
      * @return 商品信息
      */
     Goods findGoodsById(String id);
+
+    /**
+     * 商品审核
+     *
+     * @param id spu的id
+     */
+    void audit(String id);
+
+    /**
+     * 商品下架
+     *
+     * @param id spu的id
+     */
+    void pull(String id);
+
+    /**
+     * 商品上架
+     *
+     * @param id spu的id
+     */
+    void put(String id);
 
 }

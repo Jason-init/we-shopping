@@ -90,7 +90,6 @@ public class SpuController {
         return new Result(true,StatusCode.OK,"查询成功",list);
     }
 
-
     /***
      * 分页搜索实现
      * @param searchMap
@@ -105,5 +104,22 @@ public class SpuController {
         return new Result(true,StatusCode.OK,"查询成功",pageResult);
     }
 
+    @PutMapping("/audit/{id}")
+    public Result audit(@PathVariable("id") String id) {
+        spuService.audit(id);
+        return new Result(true, StatusCode.OK, "商品审核成功");
+    }
+
+    @PutMapping("/pull/{id}")
+    public Result pull(@PathVariable("id") String id) {
+        spuService.pull(id);
+        return new Result(true, StatusCode.OK, "商品下架成功");
+    }
+
+    @PutMapping("/put/{id}")
+    public Result put(@PathVariable("id") String id) {
+        spuService.put(id);
+        return new Result(true, StatusCode.OK, "商品上架成功");
+    }
 
 }
