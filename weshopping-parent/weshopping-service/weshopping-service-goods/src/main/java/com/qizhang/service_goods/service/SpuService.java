@@ -94,4 +94,16 @@ public interface SpuService {
      */
     void put(String id);
 
+    /**
+     * 还原被删除的商品
+     * @param id spu的id
+     */
+    void restore(String id);
+
+    /**
+     * 真实删除商品信息
+     * @param id spu的id
+     */
+    void realDelete(String id);
+
 }

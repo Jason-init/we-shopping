@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Updated spu service">
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added audit, pull, put for spu service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" afterDir="false" />
@@ -209,7 +209,8 @@
       <workItem from="1625064379305" duration="17000" />
       <workItem from="1625102166421" duration="4063000" />
       <workItem from="1625107771492" duration="79000" />
-      <workItem from="1625113322749" duration="2392000" />
+      <workItem from="1625113322749" duration="2817000" />
+      <workItem from="1625129985257" duration="6973000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -435,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625106227578</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Added audit, pull, put for spu service">
+      <created>1625116254397</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1625116254397</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +463,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Eureka server done" />
     <MESSAGE value="Added common module" />
     <MESSAGE value="Added common-db module" />
     <MESSAGE value="Added modules" />
@@ -480,7 +487,8 @@
     <MESSAGE value="Added Snowflake for id generation" />
     <MESSAGE value="Added add goods service" />
     <MESSAGE value="Updated spu service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated spu service" />
+    <MESSAGE value="Added audit, pull, put for spu service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added audit, pull, put for spu service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
