@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added Snowflake for id generation">
-      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/Goods.java" afterDir="false" />
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added add goods service">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service-api/weshopping-service-goods-api/src/main/java/com/qizhang/service_goods_api/pojo/CategoryBrand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/dao/CategoryBrandMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/ServiceGoodsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/ServiceGoodsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/ServiceGoodsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/ServiceGoodsApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/controller/SpuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/controller/SpuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/SpuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/SpuService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/impl/SpuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/target/classes/com/qizhang/service_goods/service/impl/SpuServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -42,7 +45,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../apache-maven-3.6.1" />
         <option name="userSettingsFile" value="C:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -70,7 +73,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.3109426" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
@@ -101,15 +104,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceGoodsApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,7 +224,9 @@
       <workItem from="1624977404618" duration="1973000" />
       <workItem from="1625011105696" duration="811000" />
       <workItem from="1625018730640" duration="1887000" />
-      <workItem from="1625050904207" duration="8835000" />
+      <workItem from="1625050904207" duration="9103000" />
+      <workItem from="1625064379305" duration="17000" />
+      <workItem from="1625102166421" duration="3823000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -435,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625018974307</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Added add goods service">
+      <created>1625063285986</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1625063285986</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +465,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="project init" />
     <MESSAGE value="Added Readme markdown file project description" />
     <MESSAGE value="Eureka server done" />
     <MESSAGE value="Added common module" />
@@ -480,6 +489,11 @@
     <MESSAGE value="Added BCrypt for admin login service" />
     <MESSAGE value="Added jwt authorize filter for system gateway" />
     <MESSAGE value="Added Snowflake for id generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Snowflake for id generation" />
+    <MESSAGE value="Added add goods service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added add goods service" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

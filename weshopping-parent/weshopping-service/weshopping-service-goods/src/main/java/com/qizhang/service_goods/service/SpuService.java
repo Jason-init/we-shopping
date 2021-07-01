@@ -30,9 +30,9 @@ public interface SpuService {
 
     /***
      * 修改
-     * @param spu
+     * @param goods
      */
-    void update(Spu spu);
+    void update(Goods goods);
 
     /***
      * 删除
@@ -64,7 +64,11 @@ public interface SpuService {
      */
     Page<Spu> findPage(Map<String, Object> searchMap, int page, int size);
 
-
-
+    /**
+     * 通过id查询goods信息
+     * @param id 商品id
+     * @return 商品信息
+     */
+    Goods findGoodsById(String id);
 
 }
