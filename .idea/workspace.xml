@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added audit, pull, put for spu service">
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added delete, restore, realDelete for spu service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/controller/SpuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/SpuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-goods/src/main/java/com/qizhang/service_goods/service/impl/SpuServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +207,8 @@
       <workItem from="1625102166421" duration="4063000" />
       <workItem from="1625107771492" duration="79000" />
       <workItem from="1625113322749" duration="2817000" />
-      <workItem from="1625129985257" duration="6973000" />
+      <workItem from="1625129985257" duration="7768000" />
+      <workItem from="1625236311839" duration="752000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -443,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625116254397</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added delete, restore, realDelete for spu service">
+      <created>1625137350917</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1625137350917</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +468,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added common module" />
     <MESSAGE value="Added common-db module" />
     <MESSAGE value="Added modules" />
     <MESSAGE value="Updated database info" />
@@ -488,7 +492,8 @@
     <MESSAGE value="Added add goods service" />
     <MESSAGE value="Updated spu service" />
     <MESSAGE value="Added audit, pull, put for spu service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added audit, pull, put for spu service" />
+    <MESSAGE value="Added delete, restore, realDelete for spu service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added delete, restore, realDelete for spu service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
