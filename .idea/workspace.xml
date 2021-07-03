@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Added delete, restore, realDelete for spu service">
+    <list default="true" id="c30cf569-ce44-4e3b-a52d-ebecba92bcbe" name="Default Changelist" comment="Fixed canal service">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_1_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java/com/qizhang/canal/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/src/main/java/com/qizhang/service_business/listener/AdListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java/com/qizhang/canal/listener/BusinessListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java/com/qizhang/canal/listener/BusinessListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-canal/src/main/java/com/qizhang/canal/listener/SpuListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/weshopping-service-business.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weshopping-parent/weshopping-service/weshopping-service-business/weshopping-service-business.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -92,7 +102,31 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceGoodsApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="weshopping-canal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qizhang.canal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qizhang.canal.CanalApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="weshopping-eureka" />
       <extension name="coverage">
@@ -106,28 +140,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewaySystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="weshopping-gateway-system" />
+    <configuration name="ServiceBusinessApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="weshopping-service-business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qizhang.gateway_system.*" />
+          <option name="PATTERN" value="com.qizhang.service_business.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qizhang.gateway_system.GatewaySystemApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServiceFileApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="weshopping-service-file" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qizhang.service_file.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qizhang.service_file.ServiceFileApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qizhang.service_business.ServiceBusinessApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceBusinessApplication" />
+        <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="Spring Boot.CanalApplication" />
         <item itemvalue="Spring Boot.ServiceGoodsApplication" />
         <item itemvalue="Spring Boot.ServiceSystemApplication" />
-        <item itemvalue="Spring Boot.GatewaySystemApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
-        <item itemvalue="Spring Boot.ServiceFileApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +229,8 @@
       <workItem from="1625107771492" duration="79000" />
       <workItem from="1625113322749" duration="2817000" />
       <workItem from="1625129985257" duration="7768000" />
-      <workItem from="1625236311839" duration="752000" />
+      <workItem from="1625236311839" duration="1483000" />
+      <workItem from="1625308493031" duration="6980000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1624355659871</created>
@@ -448,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625137350917</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Fixed canal service">
+      <created>1625238691056</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1625238691056</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added common-db module" />
     <MESSAGE value="Added modules" />
     <MESSAGE value="Updated database info" />
     <MESSAGE value="Added goods service" />
@@ -493,7 +521,8 @@
     <MESSAGE value="Updated spu service" />
     <MESSAGE value="Added audit, pull, put for spu service" />
     <MESSAGE value="Added delete, restore, realDelete for spu service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added delete, restore, realDelete for spu service" />
+    <MESSAGE value="Fixed canal service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed canal service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
